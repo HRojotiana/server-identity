@@ -5,8 +5,9 @@ import { getAuth, GoogleAuthProvider, signInWithPopup, signOut } from 'firebase/
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
+require('dotenv').config()
 const firebaseConfig = {
-  apiKey: "AIzaSyBp-MXxTScYMIh5dNIhEwSjKcCYIH8Vl0s",
+  apiKey: process.env.FIREBASE_API_KEY,
   authDomain: "server-identity.firebaseapp.com",
   projectId: "server-identity",
   storageBucket: "server-identity.firebasestorage.app",
