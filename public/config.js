@@ -8,11 +8,11 @@ import { getAuth, GoogleAuthProvider, signInWithPopup, signOut } from 'firebase/
 require('dotenv').config()
 const firebaseConfig = {
   apiKey: process.env.FIREBASE_API_KEY,
-  authDomain: "server-identity.firebaseapp.com",
-  projectId: "server-identity",
-  storageBucket: "server-identity.firebasestorage.app",
-  messagingSenderId: "874827002431",
-  appId: "1:874827002431:web:d286185b4fb7936b613e8a"
+  authDomain: process.env.FIREBASE_AUTHDOMAIN ,
+  projectId: process.env.FIREBASE_PROJECTID,
+  storageBucket: process.env.FIREBASE_STORAGEBUCKET ,
+  messagingSenderId: process.env.FIREBASE_MESSAGINGSENDERID,
+  appId: process.env.FIREBASE_APPID
 };
 
 // Initialiser Firebase
